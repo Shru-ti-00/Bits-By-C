@@ -18,6 +18,7 @@ int main()
             break;
             
         case '-':
+//print difference
             
             printf("The difference of %d and %d is %d",a,b,a-b);
 
