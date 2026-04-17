@@ -10,6 +10,7 @@ int main()
 
     for(i=1;i<=n;i++)
     {
+//factorial logic
         fact=fact*i;
     }
     printf("Factorial of %d is: %d",n,fact);
