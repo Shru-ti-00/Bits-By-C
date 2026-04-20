@@ -26,3 +26,11 @@ void pop()
         printf("Popped:%d\n",stack[top--]);
     }
 }
+
+void display()
+{
+    for(int i=top;i>=0;i--)
+    {
+        printf("%d",stack[i]);
+    }
+}
