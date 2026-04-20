@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int mian()
+int main()
 {
     int r1,c1,r2,c2;
     int i,j,k;
