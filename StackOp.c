@@ -16,6 +16,7 @@ void push(int value)
     }
 }
 
+
 void pop()
 {
     if(top==-1)
@@ -33,4 +34,15 @@ void display()
     {
         printf("%d",stack[i]);
     }
+}
+
+int main()
+{
+    push(10);
+    push(20);
+    push(30);
+    pop();
+    display();
+
+    return 0;
 }
