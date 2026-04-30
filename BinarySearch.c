@@ -1,14 +1,10 @@
 #include<stdio.h>
 
-int BinarySearch(int arr[],int item)
+int BinarySearch(int arr[],int size,int item)
 {
     
-    int size;
     int low=0,high=size-1,mid;
     
-
-    if(low>high)
-        return -1;
 
     while(low<=high)
     {
@@ -22,6 +18,8 @@ int BinarySearch(int arr[],int item)
             high=mid-1;
     }
 
+    return -1;
+
 }
 
 int main()
@@ -32,7 +30,7 @@ int main()
     printf("Enter the element to be searched:");
     scanf("%d",&item);
     
-    int result=BinarySearch(arr,item);
+    int result=BinarySearch(arr,size,item);
 
     if(result!=-1)
         printf("Element found at index %d ",result);
