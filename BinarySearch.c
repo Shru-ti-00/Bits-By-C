@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+//method for binary search
 int BinarySearch(int arr[],int size,int item)
 {
     
@@ -22,6 +23,7 @@ int BinarySearch(int arr[],int size,int item)
 
 }
 
+//main method
 int main()
 {
     int arr[]={12,20,45,67,22,98,30};
