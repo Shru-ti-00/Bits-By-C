@@ -8,11 +8,13 @@ struct Node
     struct Node* next;
 };
 
-//creating node
-struct Node* createNode(int value)
+//insertion at Beginning
+struct Node* insertAtBegin(struct Node* head,int value)
 {
     struct Node* newNode=(struct Node*)malloc(sizeof(struct Node));
     newNode->data=value;
-    newNode->next=NULL;
-    return newNode;
+    newNode->next=head;
+    head=newNode;
+    return head;
 }
+
