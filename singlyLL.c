@@ -18,6 +18,7 @@ struct Node* insertAtBegin(struct Node* head,int value)
     return head;
 }
 
+//insertion at End
 struct Node* insertAtEnd(struct Node* head,int value)
 {
     struct Node* newNode=(struct Node*)malloc(sizeof(struct Node));
