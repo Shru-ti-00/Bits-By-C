@@ -8,7 +8,7 @@ struct Node
     struct Node* next;
 };
 
-//insertion at Beginning
+//Insertion at Beginning
 struct Node* insertAtBegin(struct Node* head,int value)
 {
     struct Node* newNode=(struct Node*)malloc(sizeof(struct Node));
@@ -18,7 +18,7 @@ struct Node* insertAtBegin(struct Node* head,int value)
     return head;
 }
 
-//insertion at End
+//Insertion at End
 struct Node* insertAtEnd(struct Node* head,int value)
 {
     struct Node* newNode=(struct Node*)malloc(sizeof(struct Node));
@@ -29,7 +29,8 @@ struct Node* insertAtEnd(struct Node* head,int value)
         return newNode;
 
     struct Node* temp = head;
-    while (temp->next != NULL) {
+    while (temp->next != NULL) 
+    {
         temp = temp->next;
     }
 
