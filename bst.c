@@ -16,3 +16,11 @@ struct Node* createNode(int value)
     newNode->right=NULL;
     return newNode;
 }
+
+struct Node* insert(struct Node* root, int value)
+{
+    if(root==NULL)
+    {
+        return createNode(value);
+    }
+}
