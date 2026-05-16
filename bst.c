@@ -23,4 +23,16 @@ struct Node* insert(struct Node* root, int value)
     {
         return createNode(value);
     }
+
+    if(value<root)
+    {
+        root->left=insert(root->left,value);
+    }
+
+    if(value>root)
+    {
+        root->right=insert(root->right,value);
+    }
+
+    return root;
 }
