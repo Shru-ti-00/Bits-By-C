@@ -50,6 +50,7 @@ void inorder(struct Node* root)
     
 }
 
+// main method
 int main()
 {
     struct Node* root=NULL;
