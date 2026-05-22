@@ -36,7 +36,7 @@ struct Node* insert(struct Node* root, int value)
 
     return root;
 }
-
+//method to arrange the binary search tree in inorder
 void inorder(struct Node* root)
 {
     if(root==NULL)
