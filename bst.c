@@ -9,6 +9,7 @@ struct Node
     struct Node* right;
 };
 
+//creating a new node
 struct Node* createNode(int value)
 {
     struct Node* newNode=(struct Node*)malloc(sizeof(struct Node));
@@ -18,6 +19,7 @@ struct Node* createNode(int value)
     return newNode;
 }
 
+//method for inserting elements  
 struct Node* insert(struct Node* root, int value)
 {
     if(root==NULL)
