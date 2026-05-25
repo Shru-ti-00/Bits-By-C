@@ -4,7 +4,7 @@
 int stack[SIZE];
 int top=-1;
 
-//function for insert elements
+//method to insert elements
 void push(int value)
 {
     if(SIZE==-1)
@@ -17,7 +17,7 @@ void push(int value)
     }
 }
 
-//function to delete lements
+//method to delete elements
 void pop()
 {
     if(top==-1)
@@ -29,7 +29,7 @@ void pop()
     }
 }
 
-//function to display
+//method to display
 void display()
 {
     for(int i=top;i>=0;i--)
